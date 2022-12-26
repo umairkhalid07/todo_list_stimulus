@@ -1,0 +1,28 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To Do List</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script type="module" src="app.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>To Do List</h1>
+
+			<div data-controller="todo" data-todo-index-value="1">
+				<form class="input" data-action="todo#createNewTask">
+					<input
+						type="text"
+						placeholder="What's on your Mind..."
+						class="user_input"
+						data-todo-target="input" />
+				</form>
+
+				<ul class="tasks_list" data-todo-target="list"></ul>
+			</div>
+		</div>
+	</body>
+</html>
